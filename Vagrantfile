@@ -17,7 +17,7 @@ Vagrant.configure("2") do |config|
     dnsb.vm.hostname = "dnsb"
     dnsb.vm.provision "shell", inline: <<-SHELL
       apt-get update
-      apt-get install -y bind9 bind9utils bind9-doc
+      apt-get install -y bind9
     SHELL
   end
 end
